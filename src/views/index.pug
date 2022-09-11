@@ -1,0 +1,124 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
+    title DSO Group
+  body
+    a(href="" uk-totop style="position: fixed; bottom: 20px; right: 20px")
+    div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid)
+      div(class="uk-padding-large")
+        div(class="uk-flex uk-flex-middle")
+          img(src=require("../assets/logo.svg").default width="160px" style="object-fit: contain")
+          h1(class="uk-heading-medium uk-text-bolder uk-margin-small-left uk-margin-remove-top uk-margin-remove-bottom") DSO GROUP
+        h2(class="uk-text-light uk-text-center uk-margin-small-top" uk-scrollspy="cls: uk-animation-slide-bottom;") Завод по производству дробильного оборудования
+      div(class="uk-background-cover" style=`background-image:url(${require("../assets/1.jpg").default})` uk-height-viewport uk-scrollspy="cls: uk-animation-fade;")
+      div(class="uk-position-small uk-position-bottom-center")
+        button(class="uk-button uk-button-primary uk-button-large" uk-parallax="opacity: 1,0; y: 0,-100; end: 30vh;") Подробнее
+
+    div(class="uk-section uk-section-secondary uk-light")
+      div(class="uk-container")
+        div(class="uk-column-1-2")
+          div
+            img(src=require("../assets/agreement.svg").default width="1800" height="1200" alt="")
+          div
+            h2(class="uk-h1") О нашей компании
+
+            p Одним из приоритетных направлений нашей компании является производство и продажа дробильно-сортировочного оборудования. Также мы можем предоставить вам услугу дробления или сортировки щебня во всех регионах России. (Гранит, Гравий, ЖБИ и др.) 
+
+            p Богатый опыт и своя производственная база позволили нашей компании стать одной из ведущих производителей дробильно-сортировочного оборудования. Пользуясь оборудованием нашей компании, наши клиенты, используя современные технологии обработки материалов, достигают успехов в металлургических, дорожно-строительных, золотодобывающих, строительных отраслях промышленности.
+
+    div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid)
+      div(class="uk-padding-large")
+        h3 Название комплекса
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        div(class="uk-flex")
+          a(class="uk-button uk-button-primary" href="#modal-full-1" uk-toggle) Подробнее
+          div(id="modal-full-1" class="uk-modal-full" uk-modal)
+            div(class="uk-modal-dialog")
+              button(class="uk-modal-close-full uk-close-large" type="button" uk-close)
+              div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid)
+                div(class="uk-background-cover" style=`background-image:url(${require("../assets/3.jpg").default})` uk-height-viewport)
+                div(class="uk-padding-large")
+                  h3(class="uk-h1") Название продукта
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  dl(class="uk-description-list uk-description-list-divider")
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          div(class="uk-margin-small-left" uk-lightbox)
+            a(class="uk-button uk-button-default" href=require('../assets/3.jpg')) Галерея
+          div(uk-lightbox)
+            a(class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=T4Cnjhrpat0" data-caption="Дробильно-сортировочный комплекс ДСК-150 для щебня" data-attrs="width: 1280; height: 720;") YouTube
+            a(class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=iuWf_ARq3yE" data-caption="Дробильно-сортировочный комплекс ДСК-150 для получения кубовидного щебня" data-attrs="width: 1280; height: 720;") YouTube
+      div(class="uk-background-cover" uk-scrollspy="cls: uk-animation-fade;" style=`background-image:url(${require("../assets/3.jpg").default}); min-height: 50vh`)
+
+
+    div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid)
+      div(class="uk-background-cover" uk-scrollspy="cls: uk-animation-fade;" style=`background-image:url(${require("../assets/12.jpg").default}); min-height: 50vh`)
+      div(class="uk-padding-large")
+        h3 Название комплекса
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        div(class="uk-flex")
+          a(class="uk-button uk-button-primary" href="#modal-full-2" uk-toggle) Подробнее
+          div(id="modal-full-2" class="uk-modal-full" uk-modal)
+            div(class="uk-modal-dialog")
+              button(class="uk-modal-close-full uk-close-large" type="button" uk-close)
+              div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid)
+                div(class="uk-background-cover" style=`background-image:url(${require("../assets/12.jpg").default})` uk-height-viewport)
+                div(class="uk-padding-large")
+                  h3(class="uk-h1") Название продукта
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  dl(class="uk-description-list uk-description-list-divider")
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    dt Description term
+                    dd Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          div(uk-lightbox class="uk-margin-small-left")
+            a(class="uk-button uk-button-default" href=require('../assets/12.jpg')) Галерея
+            a(href=require('../assets/4.jpg'))
+            a(href=require('../assets/5.jpg'))
+            a(href=require('../assets/6.jpg'))
+            a(href=require('../assets/7.jpg'))
+
+
+
+    div(class="uk-section uk-section-secondary uk-light")
+      div(class="uk-container")
+        div(class="uk-column-1-2")
+          div
+            h3(class="uk-h1") Связаться с нами
+
+            div(class="uk-margin-medium-top")
+              dl(class="uk-description-list uk-description-list-divider")
+                dt(style="color: white") Владимир
+                dd Заявки на услугу дробления и сортировки
+                ul(class="uk-list")
+                  li
+                    span(class="uk-margin-small-right" uk-icon="phone")
+                    a(href="tel:+7 927 (667)-05-95" class="uk-button uk-button-text") +7 (927) 667-05-95
+                  li
+                    span(class="uk-margin-small-right" uk-icon="mail")
+                    a(href="mailto:ehd77@mail.ru" class="uk-button uk-button-text" style="text-transform: lowercase") ehd77@mail.ru
+                dt(style="color: white") Александр
+                dd Заявки на дробильно-сортировочное оборудование
+                ul(class="uk-list")
+                  li
+                    span(class="uk-margin-small-right" uk-icon="phone")
+                    a(href="tel:8 (800) 222-48-03" class="uk-button uk-button-text") 8 (800) 222-48-03
+                  li
+                    span(class="uk-margin-small-right" uk-icon="phone")
+                    a(href="tel:+7 (937) 011-05-15" class="uk-button uk-button-text") +7 (937) 011-05-15
+                  li
+                    span(class="uk-margin-small-right" uk-icon="mail")
+                    a(href="mailto:dsogroup@mail.ru" class="uk-button uk-button-text" style="text-transform: lowercase") dsogroup@mail.ru
+
+          div
+            img(src=require("../assets/contact.svg").default width="1800" height="1200" alt="")
