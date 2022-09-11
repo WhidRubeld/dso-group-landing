@@ -1,6 +1,7 @@
 const path = require('path')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/js/index.js',
@@ -30,6 +31,9 @@ module.exports = {
       hash: true,
       inject: true,
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets', to: 'assets' }],
+    }),
   ],
   module: {
     rules: [
@@ -57,17 +61,6 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      {
-        test: /\.(jpg|png|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'assets/[name].[hash].[ext]',
-            },
-          },
-        ],
       },
     ],
   },
