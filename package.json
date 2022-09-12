@@ -11,6 +11,7 @@
     "clean": "rm -rf ./dist/*"
   },
   "dependencies": {
+    "lottie-web": "^5.9.6",
     "uikit": "^3.15.6"
   },
   "devDependencies": {
