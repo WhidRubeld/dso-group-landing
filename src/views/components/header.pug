@@ -1,8 +1,22 @@
 div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid style="height: 100vh")
   div(class="uk-flex uk-flex-column uk-flex-center uk-padding-large header--block")
     div(class="uk-flex uk-flex-center")
-      img(src="assets/logo.jpg" width="270px" style="object-fit: contain")
-    h2(class="uk-text-light uk-text-center uk-margin-medium-top header--subtitle" uk-scrollspy="cls: uk-animation-slide-bottom;") Мы завод производитель дробильно-сортировочного оборудования готовы оказать услугу дробления и сортировки в вашем городе
-  div(class="uk-background-cover header--block" style="background-image:url('assets/header.jpg')" uk-scrollspy="cls: uk-animation-slide-right;")
+      img(src="assets/logo.jpg" width="270px")
+    h2(class="uk-text-light uk-text-center uk-margin-medium-top header--subtitle" uk-scrollspy="cls: uk-animation-slide-left;") Мы завод производитель дробильно-сортировочного оборудования готовы оказать услугу дробления и сортировки в вашем городе
+    div(class="uk-flex uk-flex-middle uk-flex-center" uk-scrollspy="cls: uk-animation-slide-bottom;")
+      span(class="uk-margin-small-right" uk-icon="icon: phone; ratio: 1.5")
+      a(href="tel:8 (800) 222-48-03" class="uk-button uk-button-text header--phone-link") 8 (800) 222-48-03
+  div(uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 2000" class="uk-position-relative uk-visible-toggle header--block" uk-scrollspy="cls: uk-animation-slide-right;")
+    ul(class="uk-slideshow-items header--block")
+      li
+        img(src="assets/header.jpg" uk-cover)
+      li
+        img(src="assets/images/product-1/1.jpg" uk-cover)
+      li
+        img(src="assets/images/product-2/2.jpg" uk-cover)
+      li
+        img(src="assets/images/product-3/1.jpg" uk-cover)
+    a(class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous")
+    a(class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next")
   div(class="uk-position-small uk-position-bottom-center")
     a(class="uk-button uk-button-primary uk-button-large" uk-parallax="opacity: 1,0; y: 0,-100; end: 30vh;" uk-scrollspy="cls: uk-animation-slide-top;" href="#about" uk-scroll) Подробнее

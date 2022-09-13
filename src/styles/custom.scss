@@ -18,6 +18,17 @@
   }
 }
 
+.header--phone {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.header--phone-link {
+  font-size: 21px;
+  font-weight: 300;
+}
+
 .product--actions {
   flex-direction: column;
   @media (min-width: 640px) {
