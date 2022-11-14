@@ -24,16 +24,3 @@ div(class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid style="
     a(class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next")
   div(class="uk-position-small uk-position-bottom-center")
     a(class="uk-button uk-button-primary uk-button-large" uk-parallax="opacity: 1,0; y: 0,-100; end: 30vh;" uk-scrollspy="cls: uk-animation-slide-top;" href="#about" uk-scroll) Подробнее
-
-
-
-    const schema = new db.Schema({
-owner: {
-  model: String, // the model where image are ( news, ... )
-  id: { type: db.Schema.Types.ObjectId }, // instance id ( news.id, ... )
-},
-orig_filename: String, // original image name
-file_path: String, // path to image on disk "/var/www/images/"
-url_path: String, // url part to image "/images/" ( http://site.com/ + url_path + filename.jpg )
-filename: String, // unique image filename from file hash and random 'id' string
-}, options );
